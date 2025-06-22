@@ -1,6 +1,11 @@
 { lib, pkgs, inputs, ... }:
 
 {
+    imports = [
+      inputs.spicetify-nix.homeManagerModules.default
+      inputs.nixcord.homeModules.nixcord
+    ];
+
       # User specifications
       home.username = "embeddingbits";
       home.homeDirectory = "/home/embeddingbits/";
@@ -11,7 +16,7 @@
       programs.home-manager.enable = true;
       nixpkgs.config.allowUnfree = true;
 
-# Packages
+      # Packages
       home.packages = with pkgs; [
             kitty
             fastfetch
@@ -71,5 +76,39 @@
       # Cava
       ".config/cava/config".source = ./dotfiles/cava/config;
       };
+
+      programs.spicetify =
+    let
+      spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
+    in
+    {
+      enable = true;
+      enabledExtensions = with spicePkgs.extensions; [
+        adblock
+        shuffle
+        addToQueueTop
+        history
+        volumePercentage
+        betterGenres
+        beautifulLyrics
+      ];
+      theme = spicePkgs.themes.text;
+      colorScheme = "custom";
+      customColorScheme = {
+                        accent             = "88c0d0";
+                        accent-active      = "5e81ac";
+                        accent-inactive    = "2e3440";
+                        banner             = "8fbcbb";
+                        border-active      = "bf616a";
+                        border-inactive    = "3b4252";
+                        header             = "4c566a";
+                        highlight          = "4c566a";
+                        main               = "2e3440";
+                        notification       = "5e81ac";
+                        notification-error = "bf616a";
+                        subtext            = "d8dee9";
+                        text               = "eceff4";
+                  };
+            };
 }
 

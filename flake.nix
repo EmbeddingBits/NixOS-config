@@ -9,10 +9,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+      nixcord.url = "github:kaylorben/nixcord";
+
   };
 
-  outputs = { nixpkgs, home-manager, spicetify-nix, ... }:
+  outputs = { nixpkgs, home-manager, spicetify-nix, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
@@ -23,10 +29,12 @@
 
           modules = [
             ./home.nix
-            ./spicetify-module.nix
           ];
+          extraSpecialArgs = { 
+            inherit inputs;
+          };
+          };  
         };
       };
-    };
 }
 
