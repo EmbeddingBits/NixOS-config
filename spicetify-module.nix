@@ -5,8 +5,8 @@ let
 in {
   programs.spicetify = {
     enable = true;
-    theme = "text";
-    colorScheme = "nord";
+    theme = spicePkgs.themes.catppuccin;
+    colorScheme = "mocha";
     enabledExtensions = with spicePkgs.extensions; [
       adblockify
       hidePodcasts

@@ -37,6 +37,7 @@
             btop
             libgcc
             nodejs_24
+            zenity
             rofi-wayland
 
             # Applications
