@@ -1,5 +1,3 @@
-# flake.nix
-# Don't copy and paste this.  Read above first if you tried to cheat and skim.
 {
   description = "My Home Manager configuration";
 
@@ -10,19 +8,24 @@
       url = "github:nix-community/home-manager/release-25.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, spicetify-nix, ... }:
     let
-      lib = nixpkgs.lib;
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
     in {
       homeConfigurations = {
         embeddingbits = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./home.nix ];
+
+          modules = [
+            ./home.nix
+          ];
         };
       };
     };
 }
+
