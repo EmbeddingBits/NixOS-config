@@ -12,7 +12,7 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
-  outputs = { nixpkgs, home-manager, spicetify-nix, ... }:
+  outputs = { nixpkgs, home-manager, spicetify-nix, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
@@ -23,7 +23,11 @@
 
           modules = [
             ./home.nix
+            ./spicetify-module.nix
           ];
+          extraSpecialArgs = {
+            inherit inputs;
+          };
         };
       };
     };
