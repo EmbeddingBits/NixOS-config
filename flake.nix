@@ -15,6 +15,7 @@
     };
 
       nixcord.url = "github:kaylorben/nixcord";
+      zen-browser.url = "github:pfaj/zen-browser-flake";
 
   };
 

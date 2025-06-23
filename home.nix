@@ -29,6 +29,7 @@
             libgcc zig go nodejs_24
             # Applications
             firefox
+            inputs.zen-browser.packages."${system}".default
             # Utilities
             gh flatpak fd gnumake gparted zip unzip eza tree clang-tools btop libnotify brightnessctl power-profiles-daemon 
       ];
