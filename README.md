@@ -9,11 +9,16 @@
 -   **Spotify**: [Spicetify](https://github.com/spicetify)
 -   **Discord**: [Discord](https://betterdiscord.app/)
 
-
+# Main Rice
 
 ![riceSS](applications.png)
 ![riceSS](cava.png)
 ![riceSS](discord.png)
 ![riceSS](rofi.png)
 ![riceSS](nvim.png)
+
+# Waybar Configurations
+![waybar_blocks](./waybar_blocks.png)
+![waybar_dark](./waybar_dark.png)
+![waybar_light](./waybar_light.png)
 
