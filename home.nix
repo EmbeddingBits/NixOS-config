@@ -94,6 +94,7 @@
                   };
             };
 
+      # Nixcord Config
       xdg.configFile."Vencord/themes".source = ./dotfiles/discord-theme;
       programs.nixcord = {
             enable = true;
@@ -109,6 +110,16 @@
                               file = true;
                         };
                   };
+            };
+      };
+
+      # Git Config
+      programs.git = {
+            enable = true;
+            userName = "embeddingbits";
+            userEmail = "tspamiitesh@gmail.com";
+            extraConfig = {
+                  init.defaultBranch = "main";
             };
       };
 }
