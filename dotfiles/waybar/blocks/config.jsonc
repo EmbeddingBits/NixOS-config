@@ -38,11 +38,11 @@
             "warp-on-scroll": false,
             "format": "{icon}",
             "format-icons": {
-                  "1": "<span size='17000'>   </span>",
-                  "2": "<span size='17000'>   </span>",
-                  "3": "<span size='17000'>   </span>",
-                  "4": "<span size='17000'> 󰓇 </span>",
-                  "5": "<span size='17000'>   </span>",
+                  "1": "<span size='17000'></span>",
+                  "2": "<span size='17000'></span>",
+                  "3": "<span size='17000'> </span>",
+                  "4": "<span size='17000'>󰓇</span>",
+                  "5": "<span size='17000'></span>",
             }
       },
 
