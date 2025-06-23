@@ -30,7 +30,7 @@
             # Applications
             firefox
             # Utilities
-            flatpak fd gnumake gparted zip unzip eza tree clang-tools btop libnotify brightnessctl power-profiles-daemon 
+            gh flatpak fd gnumake gparted zip unzip eza tree clang-tools btop libnotify brightnessctl power-profiles-daemon 
       ];
 
       # Dotfiles
