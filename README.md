@@ -1,5 +1,5 @@
 # Software
--   **Distro**: [Arch](https://nixos.org/)
+-   **Distro**: [NixOS](https://nixos.org/)
 -   **Window manager**: [Hyprland](https://hyprland.org/)
 -   **Top bar**: [Waybar](https://github.com/Alexays/Waybar)
 -   **Terminal**: [kitty](https://github.com/kovidgoyal/kitty)

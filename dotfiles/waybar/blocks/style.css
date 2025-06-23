@@ -51,7 +51,7 @@ window#waybar.hidden {
   background: #2e3440;
   border: 3px solid #2e3440;
   border-radius: 3px;
-  min-height: 30px;
+  min-height: 20px;
 }
 
 #window,
@@ -85,7 +85,7 @@ window#waybar.hidden {
 
 #workspaces button {
   color: #eceff4;
-  padding: 0 6px;
+  padding: 0px 5px;
   margin: 0px 4px;
   min-width: 28px;
 }

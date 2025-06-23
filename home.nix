@@ -19,7 +19,7 @@
       # Packages
       home.packages = with pkgs; [
             # Hypr Utilities
-            hyprland hyprlock hyprshot hyprpicker waybar swww nwg-look rofi-wayland rofi-power-menu dunst
+            hyprland hyprlock hyprshot hyprpicker waybar swww nwg-look rofi-wayland rofi-power-menu dunst waypaper
             # Terminal Utilities
             kitty fastfetch fish starship cava btop ranger
             # Gnome Related
@@ -44,8 +44,8 @@
             ".config/hypr/hyprlock.conf".source = ./dotfiles/hypr/hyprlock.conf;
             ".config/hypr/nord.conf".source = ./dotfiles/hypr/nord.conf;
             # Waybar
-            ".config/waybar/config.jsonc".source = ./dotfiles/waybar/config.jsonc;
-            ".config/waybar/style.css".source = ./dotfiles/waybar/style.css;
+            ".config/waybar/config.jsonc".source = ./dotfiles/waybar/blocks/config.jsonc;
+            ".config/waybar/style.css".source = ./dotfiles/waybar/blocks/style.css;
             # Rofi
             ".config/rofi/config.rasi".source = ./dotfiles/rofi/config.rasi;
             ".config/rofi/fonts.rasi".source = ./dotfiles/rofi/fonts.rasi;
