@@ -15,23 +15,25 @@
 
       programs.home-manager.enable = true;
       nixpkgs.config.allowUnfree = true;
+      programs.neovim.enable = true;
 
       # Packages
       home.packages = with pkgs; [
             # Hypr Utilities
-            hyprland hyprlock hyprshot hyprpicker waybar swww nwg-look rofi-wayland rofi-power-menu dunst waypaper
+            hyprland hyprlock hyprshot hyprpicker waybar swww nwg-look rofi-wayland rofi-power-menu dunst waypaper cmus
             # Terminal Utilities
             kitty fastfetch fish starship cava btop ranger
             # Gnome Related
             gnome-tweaks
             gnomeExtensions.user-themes
             # Development
-            libgcc zig go nodejs_24
+            libgcc zig go nodejs_24 lua-language-server
             # Applications
-            firefox
+            firefox pavucontrol neovide
             inputs.zen-browser.packages."${system}".default
             # Utilities
-            gh flatpak fd gnumake gparted zip unzip eza tree clang-tools btop libnotify brightnessctl power-profiles-daemon 
+            gh flatpak fd ripgrep gnumake gparted zip unzip eza tree clang-tools btop libnotify brightnessctl power-profiles-daemon pandoc 
+
       ];
 
       # Dotfiles
