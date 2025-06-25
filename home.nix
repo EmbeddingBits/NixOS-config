@@ -22,17 +22,17 @@
             # Hypr Utilities
             hyprland hyprlock hyprshot hyprpicker waybar swww nwg-look rofi-wayland rofi-power-menu dunst waypaper cmus
             # Terminal Utilities
-            kitty fastfetch fish starship cava btop ranger
+            kitty fastfetch fish starship cava btop ranger ncmpcpp rmpc ffmpeg
             # Gnome Related
             gnome-tweaks
             gnomeExtensions.user-themes
             # Development
-            libgcc zig go nodejs_24 lua-language-server
+            libgcc zig go nodejs_24 lua-language-server python313 python313Packages.pip
             # Applications
-            firefox pavucontrol neovide
+            firefox pavucontrol neovide chromium
             inputs.zen-browser.packages."${system}".default
             # Utilities
-            gh flatpak fd ripgrep gnumake gparted zip unzip eza tree clang-tools btop libnotify brightnessctl power-profiles-daemon pandoc 
+            gh flatpak fd ripgrep gnumake gparted zip unzip eza tree clang-tools btop libnotify brightnessctl power-profiles-daemon pandoc mpd mpc 
 
       ];
 
