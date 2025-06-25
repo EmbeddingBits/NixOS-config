@@ -8,7 +8,8 @@
 
       "modules-left": [
             "custom/rofi",
-            "clock"
+            "clock",
+            "cava"
       ],
 
       "modules-center": [
@@ -59,12 +60,17 @@
             "icon": false
       },
 
-      "tray": {
-            "icon-size": 18,
-            "spacing": 8
+    "cava": {
+        "framerate": 144,
+        "bars": 12,
+        "method": "pipewire",
+        "source": "auto",
+            "bar_delimiter": 0,
+            "waves": true,
+            "noise_reduction": 0.77,
+            "input_delay": 4,
+            "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
       },
-
-
       "cpu": {
             "format": "<span color='#2e3440' bgcolor='#d08770' size='17000'>  </span> {usage}%",
             "tooltip": false,

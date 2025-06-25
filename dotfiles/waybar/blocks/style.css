@@ -37,6 +37,7 @@ window#waybar.hidden {
 #temperature.critical,
 #backlight,
 #memory,
+#cava,
 #network,
 #pulseaudio,
 #pulseaudio.muted,
@@ -167,6 +168,11 @@ window#waybar.hidden {
 }
 #network {
   color: #bf616a;
+}
+#cava {
+      font-family: monospace;
+      color: #5e81ac;
+      padding: 0 8px;
 }
 
 #pulseaudio.muted {
